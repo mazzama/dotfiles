@@ -63,4 +63,11 @@ return {
             vim.cmd [[packadd wakatime/vim-wakatime]]
         end,
     },
+    {
+        "leoluz/nvim-dap-go",
+        event = "VeryLazy",
+        config = function ()
+           require "configs.dap-go" 
+        end
+    },
 }
